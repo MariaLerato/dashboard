@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AddBook } from "./AddBook";
 import { AddLesson } from "./AddLesson";
+import { BookView } from "./BookView";
+
 import { AddQuestion } from "./AddQuestion";
 import { Home } from "./home";
 import { LessonPage } from "./LessonPage";
@@ -19,6 +21,8 @@ const Menu = ()=>{
                 <Route path={'/signIn'} element={<Signin/>}/>
                 <Route path={'/home'} element={<Home/>}/>
                 <Route path={'/AddBook'} element={<AddBook/>}/>
+                <Route path={'/BookView'} element={<BookView/>}/>
+
                 <Route path={'/AddLesson'} element={<AddLesson/>}/>
                 <Route path={'/AddQuestion'} element={<AddQuestion/>}/>
                 <Route path={'/LessonPage'} element={<LessonPage/>}/>

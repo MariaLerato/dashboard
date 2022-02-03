@@ -1,0 +1,47 @@
+
+.btn-light {
+    margin-left: 800px;
+    width:150px;
+    border-color: #4B7BE8;
+    background-color:#4B7BE8;
+    color: white;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+/*     
+    .fluid-container {
+        background: #fff;
+        margin: 25px auto;
+        border-color: #0B156F;
+        /* border-width: 3 red;
+border-radius: 10;
+border-color:red ; */
+
+
+/* borderColor: 'red';
+borderRadius:10;
+borderWidth: 3; */
+
+
+
+
+
+
+
+.row {
+    margin-top: 20px;
+}
+
+/* .btn-light {
+    color: #fff !important;
+    width: 130px;
+} */
+
+
+.nav-tabs{
+margin-top: 20px;
+margin-left: 20px;
+}
