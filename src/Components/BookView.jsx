@@ -36,10 +36,10 @@ export const BookView = () => {
     </thead>
     <tbody>
       <tr >
-        <td>Executive Suite</td>
-        <td>1</td>
-        <td>Room 15</td>
-        <td>R2500</td>
+        <td>Physical Sciences</td>
+        <td></td>
+        <td>Mathematics </td>
+        <td>Economics</td>
 
         <td>
      
