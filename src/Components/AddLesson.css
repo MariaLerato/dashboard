@@ -11,6 +11,7 @@
     margin-right: 5px;
     text-align: center;
     padding: 20px;
+    color:black;
 }
 
 
@@ -38,6 +39,7 @@ h1{
 
 
 }
+
 .menu2{
     height: 10px;
     position:absolute;
@@ -61,18 +63,22 @@ h1{
 .Curent{
     padding: 5px;
     padding-left: 30px;
-
     padding-right: 30px;
     color:rgb(21, 9, 184);
     border: 1px solid black;
 }
 li{
  padding: 5px;
-    text-align: center;
-display: inline-block;
+ text-align: center;
+ display:inline-block;
 }
 .First{
     padding-right: 60px;
+}
+.username {
+    margin-top: 4%;
+    margin-left: 12%;
+    color:grey
 }
 
 .file{
@@ -97,5 +103,5 @@ display: inline-block;
     height: 35px;
     border: none;
     width: 200px;
-    background: rgb(40, 156, 151);
+    background: rgb(80, 19, 248);
 }
