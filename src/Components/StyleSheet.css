@@ -223,6 +223,7 @@ i{
 }
 .username{
     display: flex;
+    margin-top: -1%;
 }
 .username i{
     margin-top: 4%;

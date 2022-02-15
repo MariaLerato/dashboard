@@ -24,7 +24,7 @@ export const Home = () => {
         </div>
         <div className="body">
           <div className="text-head">
-            <h1>Welcome to our EduSharp Admin System</h1>
+            <h1 style={{color:'white'}}>Welcome to our EduSharp Admin System</h1>
           </div>
           <div className="cards">
             <div className="questions">

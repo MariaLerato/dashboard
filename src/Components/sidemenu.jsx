@@ -4,6 +4,7 @@ import './StyleSheet.css'
 import 'font-awesome/css/font-awesome.min.css'
 
 export const Sidemenu = () => {
+  
   return <div className='menu-container'>
       <div className='head-container'>
           <img src={logo} className='picture' ></img>
