@@ -8,6 +8,10 @@ export const Home = () => {
 
   return (
     <div className="home-container">
+       <div class="section group">
+        <div class="col span_1_of_2"></div>
+        <div class="col span_1_of_2"></div>
+      </div>
       <div className="menu">
         <Sidemenu />
       </div>

@@ -19,6 +19,10 @@ export const SignUp = () => {
     }
   return (
     <div className='container'>
+         <div class="section group">
+        <div class="col span_1_of_2"></div>
+        <div class="col span_1_of_2"></div>
+      </div>
            <div className='header' >
                 <div  className='semiheader' style={{paddingRight:'2%',display:'flex'}}>
                 <h1 className='head'>Edu</h1>
