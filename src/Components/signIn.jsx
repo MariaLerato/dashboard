@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState ,useEffect} from "react";
 import logo from "./images/image.png";
 import "./StyleSheet.css";
 import {Link,useNavigate} from 'react-router-dom'
+import Users from './reuse'
 
 export const Signin = () => {
   const navigate = useNavigate()
 
+  const [users,setUsers] = useState([])
+  const [email,setEmail] = useState()
+  const [password,setPassword] = useState()
+  
+  useEffect(()=>{
+    Users.getData().on('value',data=>{
+      const userData =[];
+      data.forEach(data=>{
+        const info = data.val()
+        const key = data.key
+        userData.push({
+          key:key,
+          name:info.name,
+          surname:info.surname,
+
+        })
+        setUsers(userData)
+
+      })
+    })
+  })
   const onSubmit = (e)=>{
     e.preventDefault()
-    navigate('/home')
+    Users.login(email,password,navigate)
+    // navigate('/home')
+
 }
   return (
     <div>
@@ -28,8 +52,8 @@ export const Signin = () => {
           <div className="login-content">
             <form className="login-Input">
               <h2>Sign In</h2>
-              <input type={"text"} placeholder="Email Address" />
-              <input type={"password"} placeholder="Password" />
+              <input type={"email"} placeholder="Email Address"  onChange={(e)=>setEmail(e.target.value)}/>
+              <input type={"password"} placeholder="Password"  onChange={(e)=>setPassword(e.target.value)}/>
             </form>
             <h3> Forgot Password ? </h3>
             <button type={"submit"} onClick={onSubmit} className="button-log">

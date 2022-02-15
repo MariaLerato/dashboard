@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState,useEffect } from "react";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import { AddBook } from "./AddBook";
 import { AddLesson } from "./AddLesson";
 import { AddQuestion } from "./AddQuestion";
@@ -10,13 +10,20 @@ import { PaperReport } from "./PaperReport";
 import { Signin } from "./signIn";
 import { SignUp } from "./signUp";
 
+
+
 const Menu = ()=>{
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+   
+  
     return (
         <>
         <BrowserRouter>
             <Routes>
-                <Route path={'/'} element={<SignUp/>}/>
-                <Route path={'/signIn'} element={<Signin/>}/>
+                <Route path={'/signIn'} element={<Signin setEmail={setEmail} setPassword={setPassword}/>}/>
+                <Route path={'/'} element={<SignUp setEmail={setEmail} setPassword={setPassword} />}/>
+                
                 <Route path={'/home'} element={<Home/>}/>
                 <Route path={'/AddBook'} element={<AddBook/>}/>
                 <Route path={'/AddLesson'} element={<AddLesson/>}/>

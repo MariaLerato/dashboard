@@ -1,8 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useEffect} from "react";
+import { Link,useNavigate } from "react-router-dom";
 import { Sidemenu } from "./sidemenu";
 
 export const Home = () => {
+  const navigate = useNavigate()
+ 
+
   return (
     <div className="home-container">
       <div className="menu">
@@ -30,7 +33,7 @@ export const Home = () => {
             <div className="questions">
               <div className="question">
                 <h3>Question Papers</h3>
-         <Link to={'/AddQuestion'}>
+          <Link to={'/AddQuestion'}>
              <i className="fa fa-edit fa-3x"></i>
            </Link>       
               </div>
@@ -39,7 +42,6 @@ export const Home = () => {
                 <Link to={'/AddLesson'}>
                     <i class="fa fa-calendar fa-3x"></i>
                 </Link>
-              
               </div>
             </div>
             <div className="offered">
@@ -48,7 +50,6 @@ export const Home = () => {
                 <Link to={'/AddBook'}>
                    <i className="fa fa-list-alt fa-3x"></i>
                 </Link>
-               
               </div>
               <div className="material">
                 <h3>Material</h3>

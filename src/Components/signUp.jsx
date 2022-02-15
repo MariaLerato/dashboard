@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './images/image.png'
 import './StyleSheet.css'
+import Users from './reuse'
 import { useNavigate } from 'react-router-dom';
 
 export const SignUp = () => {
     const navigate = useNavigate()
+    const [name,setName] = useState()
+    const [surname,setSurname] = useState()
+    const [email,setEmail] = useState()
+    const [password,setPassword] = useState()
+    const [confirm,setConfirm] = useState()
     const onSubmit = (e)=>{
         e.preventDefault()
-        navigate('/signIn')
+        Users.signUp(email,password,name)
+        console.log(email,'user created')
+        navigate('/home')
     }
   return (
     <div className='container'>
@@ -24,12 +32,11 @@ export const SignUp = () => {
                
                  <form className='Inputs'>
                      <h2 >Sign Up</h2>
-                     <input type={'text'} placeholder='First Name' />
-                     <input type={'text'} placeholder='Last Name' />
-                     <input type={'text'} placeholder='Email Address' />
-                     <input type={'text'} placeholder='New Password' />
-                     <input type={'text'} placeholder='Confirm Password' />
-                    
+                     <input type={'text'} placeholder='First Name' onChange={(e)=>setName(e.target.value)} />
+                     <input type={'text'} placeholder='Last Name' onChange={(e)=>setSurname(e.target.value)} />
+                     <input type={'email'} placeholder='Email Address' onChange={(e)=>setEmail(e.target.value)} />
+                     <input type={'password'} placeholder='New Password' onChange={(e)=>setPassword(e.target.value)} />
+                     <input type={'password'} placeholder='Confirm Password' />
                  </form>
                  <button type={'submit'} className='button' onClick={onSubmit}> Sign Up </button>
              </div>
