@@ -22,7 +22,7 @@ export const AddQuestion = () => {
     ${({ active }) =>
       active &&
       `
- border:2px solid #A1A1A1;
+ border:5px solid #A1A1A1;
  border-bottom:none
  opacity:1;
  color:#4B7BE8;
@@ -32,7 +32,7 @@ export const AddQuestion = () => {
   const ButtonGroup = styled.div`
    display:flex;
   `
-  const headers = ["Add", "View"];
+  const headers = ["Add", "View", "Report"];
   const [active, setActive] = useState(headers[0]);
   const [index,setIndex]=useState("Add")
 

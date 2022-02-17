@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./AddBook.css";
 import logo from "./images/image.png";
 import styled from "styled-components";
+
+
 export const AddBook = () => {
   const Tab = styled.button`
     font-size: 20px;
@@ -24,7 +26,7 @@ font-weight:600
   const ButtonGroup = styled.div`
     display: flex;
   `;
-  const headers = ["Add", "View"];
+  const headers = ["Add", "View", "Report"];
   const [active, setActive] = useState(headers[0]);
   const [index, setIndex] = useState("Add");
 
