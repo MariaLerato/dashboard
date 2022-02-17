@@ -7,7 +7,7 @@ export const Sidemenu = () => {
   
   return <div className='menu-container'>
       <div className='head-container'>
-          <img src={logo} className='picture' ></img>
+          <img src={logo} alt ='' className='picture' ></img>
           <h2>EduSharp</h2>
       </div>
       <div className='screens'>

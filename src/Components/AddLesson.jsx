@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import './AddLesson.css'
 import logo from './images/image.png'
 import styled from "styled-components";
+import Image from './images/video.png'
 
 export const AddLesson = () => {
   
@@ -48,7 +49,7 @@ export const AddLesson = () => {
     <td className="menu2">
     <div >
     <div className='head-container2'>
-          <img src={logo} className='picture' ></img>
+          <img src={logo} alt ='' className='picture' ></img>
           <h2>EduSharp</h2>
       </div>
       <div className='screens'>
@@ -113,7 +114,36 @@ export const AddLesson = () => {
           </tr>
         </table>
         </div>
-       ):(<div className='Info'></div>)
+       ):(<div className='Info'>
+
+         <div className='rows'>
+         <div className='subject'>
+           <h3>Physical Science</h3>
+             <li>LeahMlab</li>
+             <li>Grade 10</li>
+             <br/>
+           <img src={Image} alt ='' className='' ></img>
+           <br/>
+           <button className='btnView' > View more </button>
+       </div>
+
+         <div className='subject'>
+           <h3>Physical Science</h3>
+             <li>LeahMlab</li>
+             <li>Grade 10</li>
+             <br/>
+           <img src={Image} alt ='' className='' ></img>
+           <br/>
+           <button className='btnView' > View more </button>
+
+
+
+         </div>
+           </div>
+        
+         
+
+       </div>)
      }
 
    </div>

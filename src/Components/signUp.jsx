@@ -31,7 +31,7 @@ export const SignUp = () => {
                <h1 className='admin'>Admin System</h1>
            </div>
          <div className='content-container'>
-                 <img src={logo} alt='image' className='image'/>
+                 <img src={logo} alt='' className='image'/>
              <div className='content'>
                
                  <form className='Inputs'>
@@ -46,7 +46,7 @@ export const SignUp = () => {
              </div>
          </div>
          <footer className='footer'>
-             <h2></h2>
+            
          </footer>
     </div>
   );

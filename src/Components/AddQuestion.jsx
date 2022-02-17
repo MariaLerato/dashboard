@@ -6,7 +6,6 @@
 //   </div>;
 // };
 import React, { useState } from "react";
-import { Tabs, Tab } from "react-tab-view";
 import "./AddQuestion.css";
 import logo from "./images/image.png";
 import styled from "styled-components";
@@ -56,7 +55,7 @@ export const AddQuestion = () => {
           <td className="menu2">
             <div>
               <div className="head-container2">
-                <img src={logo} className="picture"></img>
+                <img src={logo} alt ='' className="picture"></img>
                 <h2>EduSharp</h2>
               </div>
               <div className="screens">
