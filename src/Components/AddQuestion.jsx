@@ -42,46 +42,7 @@ export const AddQuestion = () => {
   }
 
   return (
-    <div>
-      <div className="username2">
-        <p>Hi,Username</p>
-        <i className="fa fa-user-circle fa-2x"></i>
-        <div className="icon">
-          <i className="fa fa-bell"></i>
-        </div>
-      </div>
-      <table>
-        <tr>
-          <td className="menu2">
-            <div>
-              <div className="head-container2">
-                <img src={logo} alt ='' className="picture"></img>
-                <h2>EduSharp</h2>
-              </div>
-              <div className="screens">
-                <div className="active">
-                  {" "}
-                  <i className="fa fa-home "></i> Home
-                  <br />
-                  <br />
-                </div>
-                <br />
-                <i className="fa fa-bell "></i>Notifications
-                <br />
-                <br />
-                <i class="fa fa-exclamation-circle "></i> Complaints
-                <br />
-                <br />
-                <i className="fa fa-user "></i> Profile
-                <br />
-                <br />
-                <i className="fa fa-users "></i>Manage Users
-                <br />
-              </div>
-            </div>
-          </td>
-          <td className="MyData">
-            <div>
+    <div className="maincontent">
               <h1>Question Paper</h1>
               <div className="grey">
                 <div className="Menu">
@@ -158,9 +119,5 @@ export const AddQuestion = () => {
                 
               </div>
             </div>
-          </td>
-        </tr>
-      </table>
-    </div>
   );
 };

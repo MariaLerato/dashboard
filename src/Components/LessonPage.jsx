@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const LessonPage = () => {
-  return <div>
+  return <div className='maincontent'>
         <h1>Lesson  Page </h1>
   </div>;
 };

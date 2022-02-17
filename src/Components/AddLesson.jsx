@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
-import './AddLesson.css'
-import logo from './images/image.png'
+import React, { useState } from "react";
+import "./AddLesson.css";
+import logo from "./images/image.png";
 import styled from "styled-components";
-import Image from './images/video.png'
+import Image from "./images/video.png";
+import './StyleSheet.css'
 
 export const AddLesson = () => {
-  
   const Tab = styled.button`
     font-size: 20px;
     padding: 10px 60px;
@@ -25,133 +25,112 @@ export const AddLesson = () => {
   `}
   `;
   const ButtonGroup = styled.div`
-   display:flex;
-  `
+    display: flex;
+  `;
   const headers = ["Add", "View"];
   const [active, setActive] = useState(headers[0]);
-  const [index,setIndex]=useState("Add")
+  const [index, setIndex] = useState("Add");
 
-  const HandleTap=(type)=>{
-    setActive(type)
-    setIndex(type)
-  }
+  const HandleTap = (type) => {
+    setActive(type);
+    setIndex(type);
+  };
 
-  return <div>
-    <div className="username2">
-            <p>Hi,Username</p>
-            <i className="fa fa-user-circle fa-2x"></i>
-            <div className="icon">
-            <i className="fa fa-bell"></i>
-            </div>
+  return (
+    <div className="maincontent">
+      <div>
+        <h1>Lessons</h1>
+        <div className="grey">
+          <div className="Menu">
+            <ButtonGroup>
+              {headers.map((type) => (
+                <Tab
+                  key={type}
+                  active={active === type}
+                  onClick={() => HandleTap(type)}
+                >
+                  {type}
+                </Tab>
+              ))}
+            </ButtonGroup>
           </div>
-<table>
-  <tr>
-    <td className="menu2">
-    <div >
-    <div className='head-container2'>
-          <img src={logo} alt ='' className='picture' ></img>
-          <h2>EduSharp</h2>
-      </div>
-      <div className='screens'>
-        <div className='active'>  <i className='fa fa-home '></i> Home<br/><br/></div><br/>
-          <i className='fa fa-bell '></i>Notifications<br/><br/>
-          <i class="fa fa-exclamation-circle "></i> Complaints<br/><br/>
-          <i className='fa fa-user '></i>   Profile<br/><br/>
-          <i className='fa fa-users '></i>Manage Users<br/>
-      </div>
-      </div>
-    </td>
-    <td className='MyData'>
+          {index === "Add" ? (
+            <div className="Info">
+              <table>
+                <tr className="row">
+                  <td className="First">Subject </td>
+                  <td>
+                    <select className="select"></select>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td className="First"> Grade </td>
+                  <td>
+                    <select className="select"></select>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td className="First"> Description</td>
+                  <td>
+                    <select className="select"></select>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td className="First">Subject </td>
+                  <td>
+                    <select className="select"></select>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td className="First"> Date </td>
+                  <td>
+                    <select className="select"></select>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td className="First">Upload Video </td>
+                  <td>
+                    <input className="file" type="file"></input>
+                  </td>
+                </tr>
+                <tr className="row">
+                  <td> </td>
+                  <td>
+                    <button type="button" className="Btn">
+                      {" "}
+                      Save
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          ) : (
+            <div className="Info">
+              <div className="rows">
+                <div className="subject">
+                  <h3>Physical Science</h3>
+                  <li>LeahMlab</li>
+                  <li>Grade 10</li>
+                  <br />
+                  <img src={Image} alt="" className=""></img>
+                  <br />
+                  <button className="btnView"> View more </button>
+                </div>
 
-    <div >
-    <h1>Lessons</h1>
-    <div className='grey'>
-     <div className='Menu'>
-     <ButtonGroup>
-                    {
-                      headers.map(type=> (
-                        <Tab key={type}
-                        active={active === type}
-                        onClick={()=>HandleTap(type)}
-                        >
-                          {type}
-                        </Tab>
-                      ))
-                    }
-                  </ButtonGroup>
-     </div>
-     {
-       index ==="Add"?(
-        <div className='Info'>
-        <table>
-          <tr className='row'>
-            <td className='First'>Subject </td>
-            <td><select className='select'></select></td>
-          </tr>
-          <tr className='row'>
-            <td className='First' > Grade </td>
-            <td><select className='select'></select></td>
-          </tr>
-          <tr className='row'>
-            <td className='First'> Description</td>
-            <td><select className='select'></select></td>
-          </tr >
-          <tr className='row'>
-            <td className='First'>Subject </td>
-            <td><select className='select'></select></td>
-          </tr>
-          <tr className='row'>
-            <td className='First' > Date </td>
-            <td><select className='select'></select></td>
-          </tr>
-          <tr className='row'>
-            <td className='First'>Upload Video </td>
-            <td><input className='file' type='file'></input></td>
-          </tr>
-          <tr className='row'>
-            <td> </td>
-            <td><button type='button' className='Btn'> Save</button></td>
-          </tr>
-        </table>
+                <div className="subject">
+                  <h3>Physical Science</h3>
+                  <li>LeahMlab</li>
+                  <li>Grade 10</li>
+                  <br />
+                  <img src={Image} alt="" className=""></img>
+                  <br />
+                  <button className="btnView"> View more </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
-       ):(<div className='Info'>
-
-         <div className='rows'>
-         <div className='subject'>
-           <h3>Physical Science</h3>
-             <li>LeahMlab</li>
-             <li>Grade 10</li>
-             <br/>
-           <img src={Image} alt ='' className='' ></img>
-           <br/>
-           <button className='btnView' > View more </button>
-       </div>
-
-         <div className='subject'>
-           <h3>Physical Science</h3>
-             <li>LeahMlab</li>
-             <li>Grade 10</li>
-             <br/>
-           <img src={Image} alt ='' className='' ></img>
-           <br/>
-           <button className='btnView' > View more </button>
-
-
-
-         </div>
-           </div>
-        
-         
-
-       </div>)
-     }
-
-   </div>
-     </div>
-    </td>
-  </tr>
-</table>
-
-
-  </div>;
+      </div>
+    </div>
+  );
 };
