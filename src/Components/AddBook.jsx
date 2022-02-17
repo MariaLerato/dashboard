@@ -26,7 +26,7 @@ font-weight:600
   const ButtonGroup = styled.div`
     display: flex;
   `;
-  const headers = ["Add", "View"];
+  const headers = ["Add", "View", "Report"];
   const [active, setActive] = useState(headers[0]);
   const [index, setIndex] = useState("Add");
 
@@ -127,7 +127,7 @@ font-weight:600
                         </td>
                       </tr>
                       <tr className="row">
-                        <td className="First">Upload Video </td>
+                        <td className="First">Upload Book </td>
                         <td>
                           <input className="file" type="file"></input>
                         </td>
@@ -145,7 +145,7 @@ font-weight:600
                   </div>
                   ):(<div className="Info"></div>)
                 }
-              
+
               </div>
             </div>
           </td>

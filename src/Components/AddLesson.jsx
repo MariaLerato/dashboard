@@ -27,7 +27,7 @@ export const AddLesson = () => {
   const ButtonGroup = styled.div`
    display:flex;
   `
-  const headers = ["Add", "View"];
+  const headers = ["Add", "View", "Report"];
   const [active, setActive] = useState(headers[0]);
   const [index,setIndex]=useState("Add")
 
