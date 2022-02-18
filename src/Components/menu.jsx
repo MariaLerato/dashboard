@@ -9,8 +9,12 @@ import { OverView } from "./OverView";
 import { Signin } from "./signIn";
 import { SignUp } from "./signUp";
 import Notification from "./Notification/Notification.jsx";
+
 import { Sidemenu } from "./sidemenu";
 import './StyleSheet.css'
+import Complaints from "./Complaints/Complaints";
+import Profile from "./Profile/Profile";
+import Manageusers from "./Manageusers/Manageusers";
 
 const Menu = () => {
   const [email, setEmail] = useState(true);
@@ -30,8 +34,10 @@ const Menu = () => {
                 <Route path={"/home/AddQuestion"} element={<AddQuestion />} />
                 <Route path={"/home/LessonPage"} element={<LessonPage />} />
                 <Route path={"/OverView"} element={<OverView />} />
-           
                 <Route path={"/Notification"} element={<Notification />} />
+                <Route path={"/Manageusers"} element={<Manageusers />} />
+                <Route path={"/Complaints"} element={<Complaints />} />
+                <Route path={"/Profile"} element={<Profile />} />
               </Routes>
             </div>
           ) : (
