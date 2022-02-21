@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import { AddBook } from "./AddBook";
 import { AddLesson } from "./AddLesson";
 import { AddQuestion } from "./AddQuestion";
@@ -28,6 +28,7 @@ const Menu = () => {
             <div className="appMainContainer">
                 <Sidemenu />
               <Routes>
+                <Route path="/" element={<Navigate to="/home" replace={true}/>}/>
                 <Route path={"/home"} element={<Home />} />
                 <Route path={"/home/AddBook"} element={<AddBook />} />
                 <Route path={"/home/AddLesson"} element={<AddLesson />} />
