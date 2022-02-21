@@ -10,7 +10,7 @@ import "./ReportBooks.css"
 
 import { AddLesson } from "./AddLesson";
 import "./AddLesson.css";
-import { ViewLesson } from "./viewLesson";
+import { ViewLesson } from "./ViewLesson";
 import "./ViewLesson.css";
 import { ReportLesson } from "./ReportLesson";
 import "./ReportLesson.css";
@@ -23,7 +23,6 @@ import { ReportPaper } from "./ReportPaper";
 import "./ReportLesson.css";
 
 import { Home } from "./home";
-import { LessonPage } from "./LessonPage";
 import { Signin } from "./signIn";
 import { SignUp } from "./signUp";
 
@@ -45,15 +44,24 @@ const Menu = ()=>{
                 <Route path={'/'} element={<SignUp setEmail={setEmail} setPassword={setPassword} />}/>
                 
                 <Route path={'/home'} element={<Home/>}/>
-                <Route path={'/AddBook'} element={<AddBook/>}/>
-                <Route path={'/AddLesson'} element={<AddLesson/>}/>
-                <Route path={'/AddQuestion'} element={<AddQuestion/>}/>
-                <Route path={'/LessonPage'} element={<LessonPage/>}/>
-                <Route path={'./ViewBooks'} element={<ViewBooks/>}/>
 
-                {/* <Route path={'/'} element={<SignUp/>}/>
-                <Route path={'/'} element={<SignUp/>}/>
-                <Route path={'/'} element={<SignUp/>}/> */}
+                <Route path={'/AddBook'} element={<AddBook/>}/>
+                <Route path={'./ViewBooks'} element={<ViewBooks/>}/>
+                <Route path={'./ReportBooks'} element={<ReportBooks/>}/>
+
+                <Route path={'/AddLesson'} element={<AddLesson/>}/>
+                <Route path={'./ViewLesson'} element={<ViewLesson/>}/>
+                <Route path={'./ReportLesson'} element={<ReportLesson/>}/>
+                
+                <Route path={'/AddQuestion'} element={<AddQuestion/>}/>
+                <Route path={'./ViewPaper'} element={<ViewPaper/>}/>
+                <Route path={'./ReportPaper'} element={<ReportPaper/>}/>
+
+
+                <Route path={'./ViewBooks'} element={<ViewBooks/>}/>
+                <Route path={'./'}/>
+
+             
             </Routes>
         </BrowserRouter>
         </>
