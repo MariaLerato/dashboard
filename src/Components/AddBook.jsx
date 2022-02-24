@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./AddBook.css";
 import logo from "./images/image.png";
 import styled from "styled-components";
+import Image from "./images/book.png";
+import Card from "./Cards/Card";
 
 
 export const AddBook = () => {
@@ -111,7 +113,16 @@ font-weight:600
               </table>
             </div>
           ) : (
-            <div className="Info"></div>
+            <div className="Info">
+              {
+                index === "View" ? (<>
+                  <Card subject={'Life Science'}  grade="10" image={Image}/>
+                  <Card subject={'Life Science'}  grade="10" image={Image}/>
+                 
+
+                </>) : (<div>here</div>)
+              }
+            </div>
           )}
         </div>
       </div>

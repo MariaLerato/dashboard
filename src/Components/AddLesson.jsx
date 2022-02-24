@@ -3,7 +3,8 @@ import "./AddLesson.css";
 import logo from "./images/image.png";
 import styled from "styled-components";
 import Image from "./images/video.png";
-import './StyleSheet.css'
+import Card from "./Cards/Card";
+// import './StyleSheet.css'
 
 export const AddLesson = () => {
   const Tab = styled.button`
@@ -106,28 +107,17 @@ export const AddLesson = () => {
             </div>
           ) : (
             <div className="Info">
-              <div className="rows">
-                <div className="subject">
-                  <h3>Physical Science</h3>
-                  <li>LeahMlab</li>
-                  <li>Grade 10</li>
-                  <br />
-                  <img src={Image} alt="" className=""></img>
-                  <br />
-                  <button className="btnView"> View more </button>
-                </div>
+            {
+              index === "View" ? (<>
+                <Card subject={'Life Science'} name={"Bella"} grade="10" image={Image} />
+                <Card subject={'Mathematics'} name={"Bella"} grade="12" image={Image}/>
+               
+               
 
-                <div className="subject">
-                  <h3>Physical Science</h3>
-                  <li>LeahMlab</li>
-                  <li>Grade 10</li>
-                  <br />
-                  <img src={Image} alt="" className=""></img>
-                  <br />
-                  <button className="btnView"> View more </button>
-                </div>
-              </div>
-            </div>
+              </>) : (<div>here</div>)
+            }
+          </div>
+            
           )}
         </div>
       </div>

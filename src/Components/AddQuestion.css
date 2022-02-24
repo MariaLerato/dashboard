@@ -57,7 +57,7 @@ h1{
     padding-left: 5%;
     padding-top: 5%;
     height: 60vh;
-
+    background-color: transparent;
 }
 .Info select{
     margin-left: 35%;
@@ -114,4 +114,50 @@ display: inline-block;
     font-weight: 400;
     font-size: 20px;
     margin-left: 225%;
+}
+
+/* QUESTION VIEW */
+
+.subject{
+    background: #fff;
+    width: 350px;
+   height: 250px;
+    margin: 0px;
+    border: 2px solid grey;
+    /* display:inline; */
+    margin-left: 5px;
+    text-align: center;
+    font-weight: bold;
+    /* margin-top: 500px; */
+
+}
+.subject h3{
+    width: 100%;
+    background: #4B7BE8;
+    color: #fff;
+    margin-top:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: smaller;
+}
+.rows{
+display: flex; 
+}
+
+.subject img{
+    width: 30%;
+    border: 1px 
+}
+
+.btnView{
+    margin-Top: 20px;
+    background: #4B7BE8;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    width: 25%;
+    height: 30px;
+    border-color: #4B7BE8;
+    margin-bottom: 10px;
+    
 }

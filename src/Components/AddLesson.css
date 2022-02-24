@@ -106,15 +106,19 @@ li{
     background: rgb(80, 19, 248);
 }
 
+/* LESSON VIEW */
+
 .subject{
     background: #fff;
-    width: 40%;
+    width: 350px;
+   height: 250px;
     margin: 0px;
-    border: 1px solid #000;
-    display:inline;
+    border: 2px solid grey;
+    /* display:inline; */
     margin-left: 5px;
     text-align: center;
     font-weight: bold;
+    /* margin-top: 500px; */
 
 }
 .subject h3{
@@ -126,24 +130,21 @@ li{
     padding-bottom: 5px;
     font-size: smaller;
 }
-.rows{
-display: flex; 
-}
+
 
 .subject img{
-    width: 40%;
+    width: 30%;
 }
 
 .btnView{
-    margin-bottom: 10px;
+    margin-Top: 20px;
     background: #4B7BE8;
     color: #fff;
-    
+    border-radius: 5px;
     border: none;
-    width: 40%;
-    height: 20px;
-
-    border-radius: 5;
+    width: 25%;
+    height: 30px;
     border-color: #4B7BE8;
+    margin-bottom: 10px;
     
 }

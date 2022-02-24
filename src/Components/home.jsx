@@ -35,7 +35,7 @@ export const Home = () => {
                 title={"Question Papers"}
               />
               <HomeCard
-                path="/home/LessonPage"
+                path="/home/AddLesson"
                 icon="fa fa-calendar fa-3x"
                 title={"Lessons"}
               />
@@ -47,7 +47,7 @@ export const Home = () => {
                 title={"Books"}
               />
               <HomeCard
-                path="/home/AddLesson"
+                path="/home/LessonPage"
                 icon="fa fa-copy fa-3x"
                 title={"Material"}
               />

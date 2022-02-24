@@ -53,24 +53,23 @@ h1{
     margin-top: 0;
 }
 .Info{
-
+    display: flex;
     border: 1px solid black;
-    padding-left: 60px;
-    padding-top: 20px;
+    flex-wrap: wrap;
     width: 90%;
+   
 }
 .Curent{
     padding: 5px;
     padding-left: 30px;
-
     padding-right: 30px;
     color:rgb(21, 9, 184);
     border: 1px solid black;
 }
 li{
  padding: 5px;
-    text-align: center;
-display: inline-block;
+ text-align: center;
+ display: inline-block;
 }
 .First{
     padding-right: 60px;
@@ -99,4 +98,49 @@ display: inline-block;
     border: none;
     width: 200px;
     background: rgb(40, 156, 151);
+}
+
+/* BOOK VIEW */
+.book{
+    background-color: rebeccapurple !important;
+}
+.subject{
+    background: #fff;
+    width: 350px;
+   height: 250px;
+    /* margin: 0px; */
+    border: 2px solid grey;
+    font-weight: bold;
+    margin-top: 500px;
+    margin-right: 500px; 
+    margin: 10px 
+ 
+}
+.subject h3{
+    width: 100%;
+    background: #4B7BE8;
+    color: #fff;
+    margin-top:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: smaller;
+}
+
+
+.subject img{
+    width: 30%;
+
+}
+
+.btnView{
+    margin-Top: 20px;
+    background: #4B7BE8;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    width: 25%;
+    height: 30px;
+    border-color: #4B7BE8;
+    margin-bottom: 10px;
+    
 }

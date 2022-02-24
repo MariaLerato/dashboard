@@ -9,6 +9,8 @@ import React, { useState } from "react";
 import "./AddQuestion.css";
 import logo from "./images/image.png";
 import styled from "styled-components";
+import Image from "./images/paper.png";
+import Card from "./Cards/Card";
 
 export const AddQuestion = () => {
   const Tab = styled.button`
@@ -111,13 +113,21 @@ export const AddQuestion = () => {
                           </td>
                         </tr>
                       </table>
-                    </div>):(<div className="Info"></div>)
-                    }
-                      
-                    {/* </Tab>
-                  </Tabs> */}
-                
-              </div>
-            </div>
+                      </div>
+                      ) : (
+                          <div className="Info">
+                          {
+                            index === "View" ? (<>
+                              <Card subject={'Life Science'} grade="10" image={Image} />
+                              <Card subject={'Geography'}  grade="12" image={Image}/>
+                              
+                            </>) : (<div>here</div>)
+                          }
+                        </div>
+                          
+                        )}
+                      </div>
+                    </div>
+                  
   );
 };
