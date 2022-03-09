@@ -65,32 +65,6 @@ const Menu = ()=>{
             </div>
           ) : (
             <Routes>
-<<<<<<< HEAD
-                <Route path={'/signIn'} element={<Signin setEmail={setEmail} setPassword={setPassword}/>}/>
-                <Route path={'/'} element={<SignUp setEmail={setEmail} setPassword={setPassword} />}/>
-                
-                <Route path={'/home'} element={<Home/>}/>
-
-                <Route path={'/AddBook'} element={<AddBook/>}/>
-                <Route path={'./ViewBooks'} element={<ViewBooks/>}/>
-                <Route path={'./ReportBooks'} element={<ReportBooks/>}/>
-
-                <Route path={'/AddLesson'} element={<AddLesson/>}/>
-                <Route path={'./ViewLesson'} element={<ViewLesson/>}/>
-                <Route path={'./ReportLesson'} element={<ReportLesson/>}/>
-                
-                <Route path={'/AddQuestion'} element={<AddQuestion/>}/>
-                <Route path={'./ViewPaper'} element={<ViewPaper/>}/>
-                <Route path={'./ReportPaper'} element={<ReportPaper/>}/>
-
-
-                <Route path={'./ViewBooks'} element={<ViewBooks/>}/>
-                <Route path={'./'}/>
-
-             
-            </Routes>
-        </BrowserRouter>
-=======
               <Route
                 path={"/signIn"}
                 element={
@@ -109,7 +83,6 @@ const Menu = ()=>{
           {/* <Route path={'/'} element={<SignUp/>}/>
                 <Route path={'/'} element={<SignUp/>}/>
                 <Route path={'/'} element={<SignUp/>}/> */}
->>>>>>> c19036b58fbad0c573d67ec172edb9f23a4da1d1
         </>
       </BrowserRouter>
     </>
